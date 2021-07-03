@@ -1,0 +1,153 @@
+/* Global View (Desktop View) */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    background-color: #EBEBEB;
+}
+
+.container{
+    min-height: 500px;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 140px;
+}
+
+.header-container{
+    background-color: rgb(68, 68, 68);
+    min-height: 100px;
+    margin-bottom: 40px;
+    position: fixed;
+    width: 100%;
+}
+
+header{
+    max-width: 1024px;
+    margin: 0 auto;
+    min-height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    align-items: center;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+.navButton{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 11px 25px;
+    border: 1px solid white;
+    display: inline-block;
+    position: relative;
+}
+
+.bold{
+    font-weight: 700;
+    
+}
+
+
+.col{
+    background-color: rgb(43, 226, 147);
+    width: 30%;
+    margin-bottom: 40px;
+}
+
+.col p{
+    
+    font-size: .874rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.hide-desktop{
+    display: none;
+}
+
+.col img{
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line{
+    font-weight: 700;
+}
+
+.mob-wrapper{
+    display: none;
+}
+
+/* Tablet view */
+@media (max-width: 768px){
+    .col{
+        width: 45%;
+    }
+
+    .hide-desktop{
+        display: block;
+    }
+    
+    nav {
+        display: none;
+    }
+    nav a {
+        display: block;
+    }
+
+    .navButton{
+        display: block;
+    }
+
+    .logo{
+        padding: 10px 0px;
+    }
+
+    .header-container{
+        position: relative;
+    }
+    .container{
+        padding-top: 0px;
+    }
+
+    .mob-wrapper{
+        display: block;
+        padding-right: 30px;
+    }
+
+    .mob-nav{
+        display: none;
+        position: absolute;
+        padding-top: 10px;
+    }
+    
+    .navbutton2{
+        display: block;
+        background-color: coral;
+        padding: 15px 30px;
+        margin-left: -70px;
+        text-align: center;
+    }
+}
+
+/* Mobile view */
+@media (max-width: 500px){
+    .col{
+        width: 100%;
+    }
+
+    .hide-mobile{
+        display: none;
+    }
+
+
+}
